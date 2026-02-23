@@ -1,0 +1,16 @@
+{
+  "name": "automation-architecture-lab",
+  "version": "1.0.0",
+  "description": "Framework-agnostic automation lab evaluating Cypress and Playwright architecture, UI + API strategies, and CI integration patterns.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "npm --prefix cypress-project run cy:run",
+    "cypress:open": "npm --prefix cypress-project run cy:open",
+    "playwright:test": "npm --prefix playwright-project run pw:test",
+    "test:all": "npm run cypress:run && npm run playwright:test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
