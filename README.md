@@ -1,4 +1,5 @@
-# automation-architecture-lab
+# Automation Architecture Lab
+![CI](https://github.com/MIBoy54/automation-architecture-lab/actions/workflows/ci.yml/badge.svg)
 
 \# Automation Architecture Lab
 
