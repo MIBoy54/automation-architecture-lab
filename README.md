@@ -1,10 +1,6 @@
 # Automation Architecture Lab
 ![CI](https://github.com/MIBoy54/automation-architecture-lab/actions/workflows/ci.yml/badge.svg)
 
-\# Automation Architecture Lab
-
-
-
 Framework-agnostic automation lab evaluating Cypress and Playwright architecture, UI + API strategies, and CI integration patterns.
 
 
