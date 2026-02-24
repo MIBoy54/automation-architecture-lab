@@ -6,25 +6,37 @@ Executive Summary
 
 This repository contains a framework-agnostic automation architecture lab designed to evaluate Cypress and Playwright under identical UI smoke and API contract testing conditions.
 
-The objective is not to compare syntax or developer preference, but to assess enterprise-grade architectural considerations including execution model behavior, CI/CD integration patterns, cross-browser strategy, scalability constraints, and long-term maintainability.
+The objective is not to compare syntax or developer preference. Instead, this lab evaluates enterprise-grade architectural considerations including:
 
-This lab supports modernization decision-making for Quality Engineering leaders seeking to align automation strategy with DevOps maturity and sustainable delivery models.
+Execution model behavior
+
+CI/CD integration patterns
+
+Cross-browser strategy
+
+Parallelization and scalability constraints
+
+Test architecture maintainability
+
+Long-term sustainability
+
+This lab supports modernization decision-making for Quality Engineering leaders aligning automation strategy with DevOps maturity and scalable delivery models.
 
 Evaluation Focus Areas
 
-The lab evaluates both frameworks across the following architectural dimensions:
+The frameworks are evaluated across the following architectural dimensions:
 
-Execution model tradeoffs (browser isolation vs. multi-tab orchestration)
+Execution model trade-offs (in-browser runtime vs. multi-context orchestration)
 
-CI/CD integration behavior (GitHub Actions validation)
+CI/CD validation behavior (GitHub Actions pipeline execution)
 
 Cross-browser testing strategy
 
 Parallelization and scalability patterns
 
-Test architecture maintainability
+UI + API contract alignment
 
-API + UI contract alignment
+Long-term maintainability considerations
 
 Project Structure
 Cypress Implementation
@@ -43,15 +55,15 @@ Run:
 npm run playwright:test
 CI Integration
 
-Both implementations are validated through unified GitHub Actions workflows to simulate enterprise CI/CD environments and ensure consistent pipeline execution behavior.
+Both implementations are validated through a unified GitHub Actions workflow to simulate enterprise CI/CD execution conditions and enforce deterministic pipeline behavior.
 
 Purpose
 
 Automation modernization decisions should be grounded in architectural evidence — not tool trends.
 
-This lab was created to foster more strategic conversations around automation platform selection, DevOps integration, and long-term scalability within enterprise Quality Engineering environments.
+This lab was created to support more strategic conversations around automation platform selection, DevOps integration, and long-term scalability within enterprise Quality Engineering environments.
 
-Comparative Observations (In Progress)
+Comparative Observations (Ongoing)
 
 Early evaluation insights include:
 
@@ -59,6 +71,6 @@ Playwright demonstrates stronger native cross-browser orchestration capabilities
 
 Cypress provides simplified developer ergonomics with tighter execution constraints.
 
-CI runtime variability observed under parallel execution models.
+CI runtime behavior differs under parallel execution models.
 
-API contract layering improves cross-framework parity validation.
+API contract layering improves cross-framework validation parity.
