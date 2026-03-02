@@ -1,76 +1,108 @@
-Automation Architecture Lab
+# Automation Architecture Lab  
+_A Modernization & Operational Decision Framework_
 
 ![CI](https://github.com/MIBoy54/automation-architecture-lab/actions/workflows/ci.yml/badge.svg)
 
-Executive Summary
+---
 
-This repository contains a framework-agnostic automation architecture lab designed to evaluate Cypress and Playwright under identical UI smoke and API contract testing conditions.
+## Executive Summary
 
-The objective is not to compare syntax or developer preference. Instead, this lab evaluates enterprise-grade architectural considerations including:
+This repository contains a structured automation architecture lab designed to evaluate multiple automation frameworks under identical validation conditions.
 
-Execution model behavior
+The objective is not feature comparison.  
+The objective is operational maturity evaluation.
 
-CI/CD integration patterns
+Rather than analyzing syntax or developer preference, this lab examines architectural behavior and enterprise impact across:
 
-Cross-browser strategy
+- Execution model design  
+- CI/CD integration readiness  
+- Licensing and governance implications  
+- Parallelization and scalability considerations  
+- Dev ecosystem alignment  
+- Long-term modernization trajectory  
 
-Parallelization and scalability constraints
+Frameworks evaluated:
 
-Test architecture maintainability
+- **Katalon Studio** — Selenium-based execution model  
+- **Cypress** — In-browser runtime execution model  
+- **Playwright** — Browser-isolated execution model  
 
-Long-term sustainability
+---
 
-This lab supports modernization decision-making for Quality Engineering leaders aligning automation strategy with DevOps maturity and scalable delivery models.
+## Evaluation Design
 
-Evaluation Focus Areas
+Each framework implementation validates the same controlled smoke scenario to eliminate feature bias and isolate execution behavior.
 
-The frameworks are evaluated across the following architectural dimensions:
+### Controlled Scenario
 
-Execution model trade-offs (in-browser runtime vs. multi-context orchestration)
+- Target: LinkedIn public guest landing page  
+- Validation: Primary call-to-action visibility  
+- Assertions:
+  - "Sign in" element visible  
+  - "Join now" element visible  
+- Deterministic pass/fail logic  
+- Suite-level orchestration  
 
-CI/CD validation behavior (GitHub Actions pipeline execution)
+No advanced framework features were leveraged to prevent architectural skew or optimization bias.
 
-Cross-browser testing strategy
+---
 
-Parallelization and scalability patterns
+## Repository Structure
+automation-architecture-lab/
+├── automation-architecture-katalon/
+├── cypress-project/
+├── playwright-project/
+└── .github/
 
-UI + API contract alignment
+Each project is self-contained and independently executable.
 
-Long-term maintainability considerations
+---
 
-Project Structure
-Cypress Implementation
+## Execution Capability Matrix
 
-Path: cypress-project/
+| Capability        | Katalon           | Cypress   | Playwright |
+|------------------|-------------------|-----------|------------|
+| Local Execution  | Supported         | Supported | Supported  |
+| Suite Execution  | Supported         | Supported | Supported  |
+| CLI Execution    | Requires KRE      | Native    | Native     |
+| CI Integration   | License-dependent | Native    | Native     |
+| Parallel Scaling | License-dependent | Limited   | Native     |
 
-Run:
+---
 
-npm run cypress:run
-Playwright Implementation
+## Katalon Baseline Considerations
 
-Path: playwright-project/
+The Katalon implementation provides Selenium-based baseline validation under Studio execution.
 
-Run:
+CLI execution requires Katalon Runtime Engine (KRE) entitlement.  
+This introduces licensing and governance considerations when scaling CI/CD execution across environments.
 
-npm run playwright:test
-CI Integration
+This constraint is documented to reflect enterprise operational realities, not tooling limitations.
 
-Both implementations are validated through a unified GitHub Actions workflow to simulate enterprise CI/CD execution conditions and enforce deterministic pipeline behavior.
+---
 
-Purpose
+## CI/CD Implications
 
-Automation modernization decisions should be grounded in architectural evidence — not tool trends.
+Cypress and Playwright provide native CLI execution and integrate directly into CI pipelines without additional licensing requirements.
 
-This lab was created to support more strategic conversations around automation platform selection, DevOps integration, and long-term scalability within enterprise Quality Engineering environments.
+Katalon requires Runtime Engine licensing for CLI-based pipeline execution, which should be considered in modernization and standardization planning.
 
-Comparative Observations (Ongoing)
+---
 
-Early evaluation insights include:
+## Strategic Intent
 
-Playwright demonstrates stronger native cross-browser orchestration capabilities.
+This lab supports enterprise discussion around:
 
-Cypress provides simplified developer ergonomics with tighter execution constraints.
+- Sustainable automation architecture  
+- Governance-aware CI scaling  
+- Dev-aligned tooling strategy  
+- Migration economics  
+- Modernization decision frameworks  
 
-CI runtime behavior differs under parallel execution models.
+The findings are intended to inform architecture and operational decisions rather than promote specific tooling.
 
-API contract layering improves cross-framework validation parity.
+---
+
+**Author**  
+Bruce R. Lewis  
+Enterprise Quality Modernization & Automation Architecture
