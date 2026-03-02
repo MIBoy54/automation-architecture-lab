@@ -141,3 +141,13 @@ vite.config.ts.timestamp-*
 # Playwright artifacts
 playwright-project/test-results/
 playwright-project/playwright-report/
+
+# --- Katalon lab (ignore generated artifacts) ---
+automation-architecture-katalon/Reports/
+automation-architecture-katalon/bin/
+automation-architecture-katalon/Libs/
+automation-architecture-katalon/tmp/
+automation-architecture-katalon/.metadata/
+automation-architecture-katalon/.settings/
+automation-architecture-katalon/settings/internal/
+automation-architecture-katalon/console-runner/
