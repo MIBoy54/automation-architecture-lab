@@ -48,12 +48,14 @@ No advanced framework features were leveraged to prevent architectural skew or o
 ---
 
 ## Repository Structure
+
+```
 automation-architecture-lab/
 ├── automation-architecture-katalon/
 ├── cypress-project/
 ├── playwright-project/
 └── .github/
-
+```
 Each project is self-contained and independently executable.
 
 ---
