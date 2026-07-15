@@ -114,5 +114,5 @@ This lab evaluates the architectural capabilities required to enable that model 
 ---
 
 **Author**  
-Bruce R. Lewis  
+Bruce Robert Lewis  
 Enterprise Quality Modernization & Automation Architecture
