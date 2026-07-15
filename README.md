@@ -7,21 +7,19 @@ _A Modernization & Operational Decision Framework_
 
 ## Executive Summary
 
-This repository contains a structured automation architecture lab designed to evaluate multiple automation frameworks under identical validation conditions.
+The Automation Architecture Lab is an engineering decision framework designed to evaluate automation architectures through an enterprise modernization lens.
 
-The objective is not feature comparison.  
-The objective is operational maturity evaluation.
+The objective is not to determine which tool is "best."
 
-Rather than analyzing syntax or developer preference, this lab examines architectural behavior and enterprise impact across:
+The objective is to understand how automation architecture decisions impact:
 
-- Execution model design  
-- CI/CD integration readiness  
-- Licensing and governance implications  
-- Parallelization and scalability considerations  
-- Dev ecosystem alignment  
-- Long-term modernization trajectory  
+- Quality engineering maturity
+- CI/CD scalability
+- Governance
+- Operational cost
+- Long-term modernization strategy 
 
-Frameworks evaluated:
+Reference architectures evaluated:
 
 - **Katalon Studio** — Selenium-based execution model  
 - **Cypress** — In-browser runtime execution model  
@@ -101,7 +99,17 @@ This lab supports enterprise discussion around:
 - Migration economics  
 - Modernization decision frameworks  
 
-The findings are intended to inform architecture and operational decisions rather than promote specific tooling.
+The findings are intended to support engineering leadership decisions around modernization, standardization, governance, and sustainable quality engineering practices rather than promote specific tooling.
+
+---
+
+## Relationship to QualityOps
+
+The Automation Architecture Lab provides technical evidence supporting the QualityOps operating model.
+
+QualityOps defines how organizations engineer quality.
+
+This lab evaluates the architectural capabilities required to enable that model through automation, CI/CD integration, and scalable validation systems.
 
 ---
 
